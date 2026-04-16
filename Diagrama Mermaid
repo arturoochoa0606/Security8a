@@ -1,0 +1,21 @@
+flowchart TD
+    subgraph Dev["Entorno de laboratorio / Desarrollo"]
+        A[Logs sintéticos / reales] --> B[Collector.py]
+        B --> C[Modelo IA<br>(Isolation Forest)]
+        C --> D[API FastAPI<br>(endpoints.py)]
+    end
+
+    subgraph Docker["Contenedor Docker"]
+        D --> E[Uvicorn Server]
+        E --> F[Puertos expuestos<br>(8000)]
+    end
+
+    subgraph Infra["Infraestructura segura"]
+        F --> G[Red interna / SIEM]
+        F --> H[Dashboard de monitoreo]
+    end
+
+    subgraph Auditoría["Auditoría y Control"]
+        D --> I[Logger.py<br>(logs/)]
+        D --> J[Playbook.py<br>(tickets/)]
+    end
