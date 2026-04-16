@@ -1,6 +1,3 @@
-# Diagrama de despliegue - Software Security8a
-
-Este diagrama muestra cómo se despliega Security8a en un entorno seguro, encapsulado en Docker y con auditoría institucional.
 
 ```mermaid
 flowchart LR
