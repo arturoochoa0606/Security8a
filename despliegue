@@ -1,0 +1,5 @@
+Local: uvicorn src.main:app --reload
+
+Docker: docker-compose up
+
+Pruebas: pytest tests/
