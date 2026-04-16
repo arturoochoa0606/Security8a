@@ -19,3 +19,31 @@ ecurity8a es un software de ciberseguridad defensiva con inteligencia artificial
 - Ejecutar solo en laboratorio o red de pruebas.
 - Revisar `docs/USO_LEGAL.md` antes de desplegar.
 
+                ┌───────────────────────────┐
+                │       Ingestión           │
+                │   (collector.py, logs)    │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │       Detección           │
+                │   (anomaly.py, modelos)   │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │       Remediación         │
+                │   (playbook.py, tickets)  │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │           API             │
+                │   (endpoints.py, FastAPI) │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │        Auditoría          │
+                │   (logger.py, registros)  │
+                └───────────────────────────┘
