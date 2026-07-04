@@ -1,5 +1,5 @@
 # Security8a
-security8a es un software de ciberseguridad defensiva con inteligencia artificial, diseñado para detectar anomalías en tráfico y registros internos, predecir intentos de intrusión y activar playbooks de remediación segura. Su enfoque es preventivo y auditado, nunca ofensivo: se centra en proteger la infraestructura,.
+ security8a es un software de ciberseguridad defensiva con inteligencia artificial, diseñado para detectar anomalías en tráfico y registros internos, predecir intentos de intrusión y activar playbooks de remediación segura. Su enfoque es preventivo y auditado, nunca ofensivo: se centra en proteger la infraestructura,.
 
 
 **Propósito:** Repositorio de ejemplo para detección de anomalías en logs, priorización de alertas y playbooks de remediación segura.  
